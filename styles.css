@@ -1,0 +1,40 @@
+#navBar{
+  background-color: #FFFFFF; opacity: 0.9; filter: alpha(opacity=70);
+}
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  background-color: #FFFFFF; opacity: 0.7; filter: alpha(opacity=70);
+  border-radius: 25px;
+  margin: 10px;
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
