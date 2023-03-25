@@ -17,13 +17,10 @@
     <link rel="stylesheet" href="styles.css">
     <script src="script.js"></script>
     
-    <style>
-        body {
-            background: url(mavazi.jpg);
-            height: 100%;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
+    <style>      
+        nav h1 {
+            margin-top: 0;
+            text-shadow: 2px 1px 0px rgba(241,221,221,0.65);
         }
     </style>
     <script>
@@ -34,7 +31,7 @@
 </head>
 
 <body>
- 
+    <div id="section1">
     <nav class="navbar navbar-expand-lg px-4" id="navBar"
         style="font-family: 'Rock Salt', cursive;">
         <a href="#" class="navbar-brand text-warning" data-toggle="tooltip" title="Home">
@@ -105,9 +102,25 @@
           
 
           </div>
-    </div>
+      </div>
+  </div>
+  <div id="section2">
+                <h2>OUR PRODUCTS</h2>
 
-    </div>
+                <h3>MALE</h3>
+                <div class="containers" id="male"></div>
+
+                <h3>FEMALE</h3>
+                <div class="containers" id="female"></div>
+
+                <h3>KIDS</h3>
+                <div class="containers" id="kids"></div>
+   </div>
+
+   <div id="section3"> </div>
+
+    <script src="index.js" type="module"></script>
+    
 </body>
 
 </html>

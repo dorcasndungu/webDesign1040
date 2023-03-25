@@ -1,3 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Ubuntu&display=swap');
+*{
+  box-sizing: border-box;
+}
+
+/* scroll bar */
+::-webkit-scrollbar{
+  width: 7px;
+}
+::-webkit-scrollbar-track {
+  border-radius: 100vw;
+}
+::-webkit-scrollbar-thumb{
+  background-color: #ffc107;
+  border-radius: 100vw;
+}
+/* END */
+
+/* SECTION 1 */
+#section1 {
+  height: 850px;
+  background: url(mavazi.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 #navBar{
   background-color: #FFFFFF; opacity: 0.9; filter: alpha(opacity=70);
 }
@@ -24,7 +51,7 @@
   width: auto;
   margin-top: -30px;
   padding: 16px;
-  color: #888;
+  color: #dd1111;
   font-weight: bold;
   font-size: 20px;
   border-radius: 0 3px 3px 0;
@@ -37,4 +64,90 @@
   right: 0;
   border-radius: 3px 0 0 3px;
 }
+/* END */
 
+/* SECTION 2 */
+#section2 {
+  height:2200px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+  padding-top: 20px;
+  padding: 13px;
+}
+#section2 h2 {
+  font-family:'Ubuntu', sans-serif; 
+  font-weight: 800;
+  font-size: 30px;
+  text-decoration: underline;
+}
+#section2 h3 {
+  font-family: 'Ubuntu', sans-serif;
+  text-decoration: underline;
+  font-weight: 700;
+}
+.containers {
+  height: 731px;
+  width: 100%; 
+  display: flex;
+  gap: 30px;
+  padding-top: 15px;
+  padding-left: 10px;
+  overflow-y: hidden;
+  overflow-x: auto;
+  overflow-inline: contain;
+  scroll-snap-type: inline mandatory;
+}
+.containers::-webkit-scrollbar {
+ height: 7px;
+}
+.containers::-webkit-scrollbar-track {
+  border-radius: 100vx;
+  background-color: #ffffff;
+}
+.containers::-webkit-scrollbar-thumb {
+border-radius: 100vw;
+background-color:rgba(80, 77, 77, 0.603);
+}
+.item {
+  min-width: 267px;
+  min-height: 450px;
+  scroll-snap-align: start;
+  border-radius: 5px;
+}
+.item img {
+  width: 100%;
+  height: 318px;
+  margin-bottom: 6px; 
+}
+.wrapper {
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ height:142px ;
+ padding-left: 5px;
+}
+.item-inner {
+  display: flex;
+  justify-content: space-between;
+}
+.item-inner button {
+  border: none;
+  border-radius: 20px;
+  width: 75px;
+  background-color: #000000;
+  color: #FFFFFF;
+  font-weight: 700;
+}
+.item-inner button:hover {
+  background-color: #FFFFFF;
+  color: black;
+  border: 1px solid black;
+}
+/* END */
+#section3 {
+  height:790px;
+  width: 100%;
+  background-color: aquamarine;
+}
